@@ -1,0 +1,27 @@
+mkdir gitClass # ساخت یک دایرکتوری
+git init # دستور ابتدایی برای شروع در گیت 
+git status # وضعیت حال حاضر گیت 
+git add index.html # اضافه کردن یک فایل در گیت 
+بعد از هربار تغییر در فایل آن را  اد کرده و بعد از اون کامیت میکنیم
+git commit -m 'comment' # کامیت کردن 
+git log # لاگ کارهایی که کردیم 
+git add -A # همه چیزو ادد میکنه 
+git diff HEAD # آخرین دستور چی بوده؟؟؟
+git diff --staged # چه تغییری در فایل هایی که ادد شدند ولی کامیت نشدن اتفاق افتاده 
+git reset index.html # برگردوندن فایل از روی استیج
+git checkout -- filename #   البته اگر کامیت نشده باشه - به تغییرات آخر برمیگردونه 
+git branch # شاخه هایی که دارند کار میکنند
+git branch master2 # ساخت شاخه جدید 
+git checkout master2 # Switched to branch 'master2'
+git merge master2 # یکی کردن اطلاعات شاخه ها 
+git rm filename # remove file
+git branch -d branchname # delet branch--> بعد از انجام کار و مرج کردن به برنچ اصلی بهتره حذف کنیم
+cd .. # یه خط برگشتن در دایرکتوری
+git clone URL # خواندن از سایت گیت 
+git push origin master # اضافه کردن تغییرات از برنچ مستر به اوریجین  
+git pull origin master # اضافه کردن تغییرات از اوریجین به مستر
+git remote # از جاهایی که فایل خوندیم از طریق آدرس، در واقع ریموت زدیم
+git remote add master2 https://github.com/test_hosein 
+# با کد بالا داریم ریموت مستر2 رو میسازیم که آدرس اون جلوش نوشته میشه 
+git push -u master2 master 
+# اطلاعات برنچ مستر رو روی مستر2 بفرست 
