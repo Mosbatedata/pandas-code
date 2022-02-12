@@ -1,0 +1,18 @@
+import pandas as pd
+
+Hosein = pd.read_csv("C:/Users/INTERNET/Documents/pythonClass/Hosein2.csv")
+print(Hosein)
+
+Hosein.loc[0]
+
+Hosein.loc[[0, 1]]
+
+Hosein.loc[0:2]
+
+type (Hosein)
+
+Hosein.head()
+
+print(Hosein.columns)
+
+print(Hosein['A'].values)

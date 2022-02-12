@@ -1,0 +1,11 @@
+Count the number of words in a text
+def n_word_of_string(string, n):
+    words = string.split()
+    number_of_this_words = 0
+    for this_words in words:
+        if len(this_words)== n :
+            number_of_this_words = number_of_this_words + 1
+    print(number_of_this_words)
+
+text1 = "I am Hossein Bahrami a 32-year-old data analyst"
+n_word_of_string(text1, 4)
