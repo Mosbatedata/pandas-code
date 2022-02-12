@@ -1,0 +1,93 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+data2 = pd.read_csv("Hosein.csv")
+
+#data.head()
+#data.info()
+#data.columns
+#data.describe()
+#data["age"]
+#data["job"].unique()
+#data["job"].value_counts()
+#data[data["job"] == "services"] #fliter
+#data["education"][data["job"] == "services"] #two filter
+#data["education"][data["job"] == "services"].unique()
+#data["education"][pd.isnull(data["job"])]# filter with isnull
+#data["education"][data["job"] == "unknown"] = "NA"
+#data.loc[data["job"] == "unknown" , "education"] = "magemishe"
+#data["education"].unique()
+#data["age"].plot()
+#data["job"].value_counts().plot()
+#data["education"].value_counts().plot()
+#data["education"].value_counts().plot(kind = "bar")
+#data["education"].value_counts().plot(kind = "bar", figsize = (10, 10))
+#plt.title("Education")
+#plt.xlabel("A")
+#plt.ylabel("B")
+#plt.show()
+#data["education"].value_counts().plot(kind = "pie", figsize = (10, 10))
+#data.groupby(["job","education"]).size()
+#data.groupby(["job","education"]).size().unstack()
+#data.groupby(["job","education"]).size().unstack().plot()
+#data.groupby(["job","education"]).size().unstack().plot(kind = "bar", stacked = True, figsize = (7, 7))
+#plt.show()
+#plt.savefig("2.png")
+#data2 = pd.read_csv("../Hosein2.csv") # 1 point means current folder and 2 point means Previous folder
+#data2 = pd.read_csv("../Hosein2.csv", header = 0) # Default
+#data3 = pd.read_csv("../Hosein3.csv", header = 0, sep = ";")
+#data3 = pd.read_csv("../Hosein3.csv", header = 0, sep = ";", names = ["A2", "B2", "C2"])
+#data3 = pd.read_csv("../Hosein3.csv", header = 0, sep = ";", names = ["A2", "B2", "C2"], encoding = "utf-8")
+# dic1 = {"id" : [1, 2, 3, 4], "age"    : [12, 13, 17, 22]}
+# #dic2 = {"id" : [1, 2, 3, 4], "weight" : [40, 55, 63, 74]}
+# dic3 = {"id" : [1, 2, 3, 5], "gender" : ["m", "f", "m", "f"]}
+# #dic4 = {"id" : [1, 2, 3, 5], "gender" : ["m", "f", "f", "f"]}
+# data11 = pd.DataFrame(dic1)
+# #data22 = pd.DataFrame(dic2)
+# data33 = pd.DataFrame(dic3)
+#data44 = pd.DataFrame(dic4)
+#pd.merge(data11, data22, left_on = "id", right_on = "id")
+#pd.merge(data11, data33, left_on = "id", right_on = "id") # inner join
+#pd.merge(data11, data33, how = "left", left_on = "id", right_on = "id")
+#pd.merge(data11, data33, how = "right", left_on = "id", right_on = "id")
+#pd.merge(data11, data33, how = "outer", left_on = "id", right_on = "id")
+# #pd.merge(data33, data44, left_on = "id", right_on = "id")
+# #pd.merge(data33, data44, left_on = "id", right_on = "id", suffixes = ("_left", "_right"))
+# df1 = pd.merge(data11, data33, how = "outer", left_on = "id", right_on = "id")
+# df1.isnull()
+# df1.isnull().sum()
+# df1.isnull().sum().sum()
+# data2 = pd.read_csv("Hosein.csv")
+# data2.isnull().sum().sum()
+# data2 = pd.read_csv("Hosein.csv", na_values = []) # list of non standard type data  
+
+# Unexpected type
+
+# type1
+
+# i = 0
+# for age in df["age"]:
+#     try:
+#         int("age")
+#     except:
+#         df.loc[i, "age"] = np.nan
+#         pass
+#     i += 1 
+
+# type2
+
+# df.loc[(df["gender"] != "m") & (df["gender"] != "f"), "gender"] = np.nan 
+
+# Multi-line comment
+
+short key ----> crtl / + 
+
+# Indices
+
+data1 = {"Name" : ["hosein", "sajad", "minoo"]  , "gender" : ["m", "m", "f"]}
+data2 = {"Name" : ["mohsen", "sanaz", "amirali"], "gender" : ["m", "f", "m"]}
+df1 = pd.DataFrame(data1)
+df2 = pd.DataFrame(data2)
+df1.index
+list(df1.index)
