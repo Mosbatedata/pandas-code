@@ -25,3 +25,4 @@ git remote add master2 https://github.com/test_hosein
 # با کد بالا داریم ریموت مستر2 رو میسازیم که آدرس اون جلوش نوشته میشه 
 git push -u master2 master 
 # اطلاعات برنچ مستر رو روی مستر2 بفرست 
+git remote rm remotename# پاک کردن ریموت  
