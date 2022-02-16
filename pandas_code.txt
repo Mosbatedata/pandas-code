@@ -91,3 +91,30 @@ df1 = pd.DataFrame(data1)
 df2 = pd.DataFrame(data2)
 df1.index
 list(df1.index)
+# df = df1.append(df2)
+# df = df1.append(df2, ignore_index = True)
+# df = pd.concat([df1, df2], ignore_index = True)
+# df = df.set_index('Name')
+# df
+# df = df.reset_index()
+# df
+DataFrame & series
+# data1 = {"Name" : ["hosein", "sajad", "minoo", "hasan", "Ali"]  ,
+#          "gender" : ["m", "m", "f","m","m"]}
+# df1 = pd.DataFrame(data1)
+Name
+# print(df1)
+# print(type(df1['Name'])) # series is one dim 
+# print(type(df1[['Name']]))
+#series is one dim 
+#df1['Name', 'gender'] # error
+#df1[['Name', 'gender']]
+ 
+# sub_df1 = df1.loc[0:2, ['Name', 'gender']]
+# print(sub_df1)
+x = [1, 2, 3, 's']
+x_series = pd.Series(x)
+print(x_series)
+x_series = pd.Series(x, index=['a', 'b', 'c', 'd'])
+print(x_series)
+
