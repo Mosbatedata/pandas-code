@@ -1,0 +1,27 @@
+1*** setup PIP
+http://robouav.org/install-module-using-pip-in-python/
+
+2***setup jupyter
+https://jupyter.org/install
+https://www.aparat.com/v/APGaO/%D9%86%D8%B5%D8%A8_python_%D9%88_jupyter_
+notebook_%D8%A8%D8%B1_%D8%B1%D9%88%DB%8C_%D8%B3%DB%8C%D8%B3%D8%AA%D9%85_
+%D8%B9%D8%A7%D9%85%D9%84_%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2
+python -m pip install --upgrade --user pip (آپدیت پیپ)
+python -m pip install --upgrade --user notebook (نصب نوتبوک)
+python -m pip install --upgrade --user JupyterLab (نصب نوتبوک)
+python -m notebook 
+pip3 install jupyterlab 
+python -m jupyterlab
+ساختن دایرکتوری
+cd documents
+mkdir pythonClass
+cd pythonClass 
+
+
+
+python -m pip install package_name
+3*** 
+Run : shift + enter 
+
+
+
